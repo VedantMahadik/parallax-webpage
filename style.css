@@ -1,0 +1,79 @@
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.8em; /* em means relative( wrt font size). Here 180%*/
+    color: #666;
+}
+
+.img1, .img2, .img3, .img4{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed; /* How the image moves wrt scroll, fixed means doesnt move wrt scroll. Default value = scroll*/
+}
+
+.img1{
+    background-image: url('images/home.jpg');
+    min-height: 100%;
+}
+
+.img2{
+    background-image: url('images/vegan.jpg');
+    min-height: 600px;
+}
+
+.img3{
+    background-image: url('images/burgers.jpg');
+    min-height: 600px;
+}
+
+.img4{
+    background-image: url('images/end.jpg');
+    min-height: 600px;
+}
+
+.section{
+    text-align:center;
+    padding:50px 80px;
+}
+
+.section-light{
+    text-align: center;
+    background-color:#ffffff;
+    color:#666;
+}
+
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+
+.ptext .head{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+    }
+
+.ptext .border.trans{
+    background-color:transparent;
+}
+
+@media(max-width:568px){
+    .img1, .img2, .img3{
+        background-attachment:scroll;
+}
+}
+
